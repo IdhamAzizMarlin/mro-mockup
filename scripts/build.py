@@ -4,9 +4,9 @@ import zipfile
 
 root = Path(__file__).resolve().parents[1]
 html = (root / 'index.html').read_text(encoding='utf-8')
-for name in ['base.css', 'mro-siviki.css', 'inspection.css']:
+for name in ['base.css', 'mro-siviki.css', 'inspection.css', 'project-review.css']:
     html = html.replace(f'<link rel="stylesheet" href="assets/css/{name}">', '<style>\n' + (root / 'assets/css' / name).read_text(encoding='utf-8') + '\n</style>')
-for name in ['inspection.js', 'app.js']:
+for name in ['inspection.js', 'review-state.js', 'project-review.js', 'app.js']:
     html = html.replace(f'<script src="assets/js/{name}"></script>', '<script>\n' + (root / 'assets/js' / name).read_text(encoding='utf-8') + '\n</script>')
 out = root / 'deliverables'
 out.mkdir(exist_ok=True)

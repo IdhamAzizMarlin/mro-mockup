@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Wireframe Detail Project · MRO</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <aside class="app-nav" aria-label="Navigasi aplikasi">
+    <a class="brand" href="#"><span class="brand-mark"></span><span>MRO<small>Aviation verification</small></span></a>
+    <a href="../index.html#home">Beranda</a>
+    <div class="app-nav-heading">Project</div>
+    <a href="../index.html#schedule">Jadwal dan penugasan</a>
+    <a class="active" href="#">Verifikasi Awal <span>W1</span></a>
+    <a href="../index.html#list/W2">Verifikasi Perubahan <span>W2</span></a>
+    <a href="../index.html#list/W3">Pemeriksaan Realisasi <span>W3</span></a>
+    <a href="../index.html#list/W4">Verifikasi Barang Sisa <span>W4</span></a>
+    <div class="app-nav-heading">Data & dokumen</div>
+    <a href="../index.html#master/0">Master perusahaan</a>
+    <a href="../index.html#documents/0">Dokumen hasil</a>
+  </aside>
+  <div class="app-page">
+    <header class="app-top"><span>Project <span class="muted">/ Verifikasi Awal</span></span><div><span class="design-label">Wireframe interaktif</span><span class="avatar">DP</span><span class="user-name">Dimas Pratama<small>Verifikator</small></span></div></header>
+    <main class="overview">
+      <div class="breadcrumb">Project / Verifikasi Awal / MRO-DEMO-001</div>
+      <div class="project-head"><div><h1>PT Aero Nusantara</h1><p>Verifikasi Awal · Hanggar Tangerang · MRO-DEMO-001</p></div><span class="tag">Dalam pemeriksaan</span></div>
+      <div class="project-meta"><div><span>Penanggung jawab</span><b>Dimas Pratama</b></div><div><span>Dokumen hasil</span><b>Belum disusun</b></div><div><span>Status resmi</span><b>Belum dikonfirmasi</b></div></div>
+      <nav class="project-tabs" aria-label="Tab Detail Project"><button data-project-tab="summary" onclick="showProjectTab('summary')">Ringkasan</button><button class="active" data-project-tab="inspection" onclick="showProjectTab('inspection')">Pemeriksaan</button><button data-project-tab="documents" onclick="showProjectTab('documents')">Dokumen & Bukti</button><button data-project-tab="findings" onclick="showProjectTab('findings')">Temuan</button><button data-project-tab="results" onclick="showProjectTab('results')">Hasil Verifikasi</button></nav>
+      <section id="overview-content"></section>
+      <p class="design-foot">Rancangan untuk evaluasi UX. Seluruh perusahaan, data, bukti, dan aturan penyelesaian merupakan contoh. <button id="reset-example" class="quiet" onclick="resetExample(this)">Reset data contoh</button></p>
+    </main>
+  </div>
+  <dialog id="workbench" aria-labelledby="work-title">
+    <header class="work-header"><div><span class="work-project">PT Aero Nusantara <span>/ MRO-DEMO-001</span></span><h2 id="work-title">Ruang pemeriksaan</h2></div><div class="work-header-actions"><span class="local-indicator">Data contoh · tersimpan lokal</span><button class="icon-button" aria-label="Tutup ruang pemeriksaan" onclick="closeWorkbench()" id="work-close"></button></div></header>
+    <div id="work-body" class="work-body"></div>
+    <footer id="work-footer" class="work-footer"></footer>
+  </dialog>
+  <div id="toast" role="status" aria-live="polite"></div>
+  <script src="workbook.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
