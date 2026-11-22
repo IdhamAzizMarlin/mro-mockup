@@ -1,0 +1,41 @@
+MRO - Prototype dengan referensi siVIKI | v1.2 | 22 November 2026
+
+Buka PROTOTYPE-MRO-SIVIKI.html di browser; tidak perlu instalasi/internet.
+Untuk versi source, buka index.html dari folder mro-mockup.
+
+Skenario review:
+1. Beranda: pilih Pekerjaan Saya/Monitoring Project dan cari perusahaan.
+2. Jadwal dan Penugasan: registrasikan Project lalu atur personel dan jadwal.
+3. Project W1-W4: buka Ringkasan, Pemeriksaan, Dokumen & Bukti,
+   Temuan, dan Hasil Verifikasi. Coba pemeriksaan spesifik tiap jenis.
+4. Susun draft dan coba review internal. Semua hasil hanya simulasi.
+5. Coba Website publik dan akses demo internal.
+6. Gunakan Beri feedback, lalu ekspor JSON/CSV pada Catatan feedback client.
+   Catatan tersimpan di browser masing-masing; kirim hasil ekspor ke fasilitator.
+
+Tombol hamburger membuka/menutup navigasi. Ikon bulan mengganti tema.
+Prototype ini memakai CSS/tampilan siVIKI yang disediakan sebagai referensi,
+dengan alur MRO, aksen cyan #3FC4E6, dan data fiktif. Folder referensi siVIKI
+asli dipertahankan. Tidak ada logo/gambar lokal pada referensi yang diberikan.
+
+Desain provisional untuk validasi client PT Surveyor Indonesia.
+Tidak ada backend, autentikasi sungguhan, integrasi SIINas, atau dokumen resmi.
+Pilihan peran adalah simulasi tampilan; bukan penerapan hak akses.
+Draft, review internal, dan status resmi dipisahkan. Aturan dan checklist
+masih perlu dikonfirmasi dengan client dan SOP yang berlaku.
+Jadwal demo memakai November 2026. Status grafik mengikuti data simulasi.
+
+Source: assets/css/base.css, assets/css/mro-siviki.css, assets/js/app.js.
+Salinan CSS siVIKI asli untuk penelusuran: assets/css/siviki-reference.css.
+Bangun ulang HTML/ZIP setelah mengedit source: python scripts/build.py
+
+Update v1.2 - Kelompok pemeriksaan W1:
+- Tujuh kelompok ditampilkan sebagai timeline vertikal.
+- Tombol Buka membuka popup tabel lebar bergaya SitiReq.
+- Pencarian, pagination, tambah data, dan pemeriksaan detail per baris.
+- Unduh Template dan Ekspor Excel menghasilkan berkas XLSX.
+- Unggah Excel adalah simulasi pencatatan nama berkas, tanpa membaca isi Excel.
+- Lampirkan Dokumen menyimpan metadata PDF/Word/gambar per kelompok.
+- Hapus lampiran hanya menghapus metadata lokal, tidak menghapus berkas asli.
+- Penilaian kelompok memperbarui status timeline; status resmi tetap terpisah.
+Source tambahan: assets/css/inspection.css dan assets/js/inspection.js.
